@@ -10,13 +10,13 @@ Overview
 
 Getting Started
 1) Install deps
-   npm install
+   pnpm install
 
 2) Dev server
-   npm run dev
+   pnpm run dev
 
 3) Build static site
-   npm run build && npm run preview
+   pnpm run build && pnpm run preview
 
 Usage
 - Press F or click "Choose folder…" to select a folder

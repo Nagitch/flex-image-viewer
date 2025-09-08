@@ -116,6 +116,12 @@
   });
 
   $: if (files) buildMetas();
+
+  // action to hook intersection observer per item
+  function observe(el: Element) {
+    io.observe(el);
+    return { destroy() { io.unobserve(el); } };
+  }
 </script>
 
 <style>
@@ -167,11 +173,5 @@
   </div>
 </div>
 
-<script lang="ts">
-  // action to hook intersection observer per item
-  function observe(el: Element) {
-    io.observe(el);
-    return { destroy() { io.unobserve(el); } };
-  }
-</script>
+
 

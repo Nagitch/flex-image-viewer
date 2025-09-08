@@ -1,7 +1,8 @@
 <script lang="ts">
   import OptionsPanel from '$lib/components/OptionsPanel.svelte';
   import ImageGrid from '$lib/components/ImageGrid.svelte';
-  import { pickImageDirectory, listImages, type ImageFile } from '$lib/utils/fs';
+  import { pickImageDirectory, listImages } from '$lib/utils/fs';
+  import type { ImageFile } from '$lib/utils/fs';
   import { onMount } from 'svelte';
 
   let files: ImageFile[] = [];
